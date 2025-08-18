@@ -15,68 +15,83 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - **Visualisation** : Power BI, Grafana  
 
 
-
-
 ## 🚀 Projets
 
 ### Forecast 2.0 — Pipeline météo
+<p align="center">
+  <img src="assets/img/Archi_meteo.png" alt="Architecture Forecast 2.0 (MongoDB RS, Airbyte, PySpark)" width="100%">
+</p>
+<sub>Architecture : MongoDB Replica Set (ECS) • Airbyte • PySpark • CloudWatch</sub>
 
-<img src="assets/img/Archi_meteo.png" alt="Architecture" width="200%">
-
-**Objectif.** Améliorer la fiabilité des prévisions électriques dans des zones peu couvertes.  
+**Objectif.** Améliorer la fiabilité des prévisions électriques en zones peu couvertes.  
 **Stack.** Airbyte → MongoDB **Replica Set** (AWS ECS) → **PySpark** → CloudWatch.  
-**Ce que j’ai fait.**
-- Architecture **multi-sources météo** (normalisation + contrôle qualité)
-- Déploiement MongoDB en **Replica Set** sur ECS (instances EC2)
-- **Monitoring** (métriques + logs) via CloudWatch
-- Tests de validation sur la chaîne (completeness, duplicates, z-scores)
+**Rôle / actions.**
+- Architecture **multi-sources** (normalisation + contrôles qualité)
+- Déploiement MongoDB en **Replica Set** (EC2/ECS)
+- **Observabilité** : métriques + logs CloudWatch
+- Tests de validation (completeness, duplicates, z-score)
 
-**Impact (exemples, à adapter).**
-- +35% de données météo exploitables  
-- -50% du temps de traitement
+**Impact.**
+- **+35%** de données météo exploitables  
+- **-50%** de temps de traitement
 
-➕ *Détails techniques :* formatage des schémas, idempotence, partitionnement, backfills.
+<details><summary><b>Détails techniques</b></summary>
+
+- Schémas unifiés, idempotence, partitionnement, backfills  
+- Stratégies de ré-essai et alerting
+</details>
 
 ---
 
 ### Sport Data Solution — ETL streaming bien-être
+<p align="center">
+  <img src="assets/img/Archi_slack.png" alt="Architecture streaming Slack/Delta Lake" width="100%">
+</p>
+<sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
-<img src="assets/img/Archi_slack.png" alt="Architecture" width="200%">
-
-**Objectif.** Récompenser l’activité sportive des salarié·e·s (primes & jours “bien‑être”).  
-**Stack.** **Redpanda/Kafka** → **PySpark Structured Streaming** → **Delta Lake** → **Slack API** / **Power BI**.  
-**Ce que j’ai fait.**
-- Ingestion temps réel (topics par type d’activité)
+**Objectif.** Récompenser l’activité sportive (primes & jours “bien-être”).  
+**Stack.** **Redpanda/Kafka** → **PySpark** → **Delta Lake** → **Slack API** / **Power BI**.  
+**Rôle / actions.**
+- Ingestion temps réel (topics par activité)
 - Enrichissement + **règles d’éligibilité** (croisement activités/RH)
-- **Notifications Slack** instantanées via consumer Python
-- **Monitoring** pipeline : Prometheus + Grafana
+- **Notifications Slack** en live (consumer Python)
+- **Monitoring** : Prometheus + Grafana
 
-**Impact (exemples, à adapter).**
-- Latence **< 5 s** sur le flux notifications  
-- Calcul automatique des droits (prime + 5 jours “bien‑être”)
+**Impact.**
+- Latence **< 5 s** sur notifications  
+- Attribution automatique des droits (prime + 5 jours “bien-être”)
 
-➕ *Détails techniques :* schémas d’événements, exactly‑once (checkpointing), SCD sur Delta.
+<details><summary><b>Détails techniques</b></summary>
+
+- Schémas d’événements, exactly-once (checkpointing), SCD sur Delta  
+- Gestion des pics (backpressure) et DLQ
+</details>
 
 ---
 
 ### RAG Chatbot — Recherche assistée par Mistral
+<p align="center">
+  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG (Mistral, FAISS, Streamlit)" width="100%">
+</p>
+<sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
-<img src="assets/img/Archi_RAG.png" alt="Architecture" width="200%">
+**Objectif.** Accès rapide à la connaissance interne **sans logging** utilisateur.  
+**Stack.** **Mistral API** + **FAISS** + **Streamlit**.  
+**Rôle / actions.**
+- Ingestion & indexation (chunking, embeddings, métadonnées)
+- Prompting **contextualisé** + gestion d’historique
+- Déploiement conteneurisé + gestion des secrets
 
-**Objectif.** Accès rapide à la connaissance interne sans logging utilisateur.  
-**Stack.** **Mistral API** + **FAISS** + **Streamlit** (frontend léger).  
-**Ce que j’ai fait.**
-- Pipeline d’indexation (chunking, embeddings, métadonnées)
-- Prompting **contextualisé** + gestion de l’historique
-- Déploiement simple (container) + secrets
-
-**Impact (exemples, à adapter).**
-- Réduction du temps de recherche **x3**  
+**Impact.**
+- Temps de recherche divisé par **3**  
 - Satisfaction interne ↑
 
-➕ *Détails techniques :* formats supportés, politique de ré-indexation, limites FAISS.
+<details><summary><b>Détails techniques</b></summary>
 
----
+- Formats supportés, politique de ré-indexation, limites FAISS  
+- Stratégies d’évaluation (exact match / semantic match)
+</details>
+
 
 ## 📬 Contact
 
