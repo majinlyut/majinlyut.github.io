@@ -1,4 +1,4 @@
-# 👋 Salut, je suis Lyuta  
+# 👋 Salut, je suis Lyuta, Data Engineer
 Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker, Kubernetes), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
 
@@ -21,7 +21,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Forecast 2.0 — Pipeline météo
 
-<img src="assets/img/Archi_meteo.png" alt="Architecture" width="150%">
+<img src="assets/img/Archi_meteo.png" alt="Architecture" width="200%">
 
 **Objectif.** Améliorer la fiabilité des prévisions électriques dans des zones peu couvertes.  
 **Stack.** Airbyte → MongoDB **Replica Set** (AWS ECS) → **PySpark** → CloudWatch.  
@@ -41,7 +41,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Sport Data Solution — ETL streaming bien-être
 
-<img src="assets/img/Archi_slack.png" alt="Architecture" width="150%">
+<img src="assets/img/Archi_slack.png" alt="Architecture" width="200%">
 
 **Objectif.** Récompenser l’activité sportive des salarié·e·s (primes & jours “bien‑être”).  
 **Stack.** **Redpanda/Kafka** → **PySpark Structured Streaming** → **Delta Lake** → **Slack API** / **Power BI**.  
@@ -61,7 +61,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### RAG Chatbot — Recherche assistée par Mistral
 
-<img src="assets/img/Archi_RAG.png" alt="Architecture" width="150%">
+<img src="assets/img/Archi_RAG.png" alt="Architecture" width="200%">
 
 **Objectif.** Accès rapide à la connaissance interne sans logging utilisateur.  
 **Stack.** **Mistral API** + **FAISS** + **Streamlit** (frontend léger).  
@@ -82,7 +82,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 - Email : [lyuta.nakata@gmail.com.com](mailto:lyuta.nakata@gmail.com)  
 - LinkedIn : [https://linkedin.com/in/lyuta ](https://www.linkedin.com/in/lyuta-nakata/) 
-- GitHub : https://github.com/majinlyut
+- GitHub : [https://github.com/majinlyut](https://github.com/majinlyut)
 
 _Dernière mise à jour : 2025‑08‑18_
 
