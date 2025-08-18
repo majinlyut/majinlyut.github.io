@@ -1,3 +1,8 @@
+<style>
+  .wrapper { max-width: 1200px !important; padding: 24px; }
+  img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 14px rgba(0,0,0,.06); }
+  sub { color: #666; }
+</style>
 # 👋 Salut, je suis Lyuta, Data Engineer
 Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker, Kubernetes), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
