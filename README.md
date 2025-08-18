@@ -21,7 +21,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Forecast 2.0 — Pipeline météo
 
-<img src="assets/img/Archi_meteo.png" alt="Architecture" width="100%">
+<img src="assets/img/Archi_meteo.png" alt="Architecture" width="150%">
 
 **Objectif.** Améliorer la fiabilité des prévisions électriques dans des zones peu couvertes.  
 **Stack.** Airbyte → MongoDB **Replica Set** (AWS ECS) → **PySpark** → CloudWatch.  
@@ -41,7 +41,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Sport Data Solution — ETL streaming bien-être
 
-<img src="assets/img/Archi_slack.png" alt="Architecture" width="100%">
+<img src="assets/img/Archi_slack.png" alt="Architecture" width="150%">
 
 **Objectif.** Récompenser l’activité sportive des salarié·e·s (primes & jours “bien‑être”).  
 **Stack.** **Redpanda/Kafka** → **PySpark Structured Streaming** → **Delta Lake** → **Slack API** / **Power BI**.  
@@ -61,7 +61,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### RAG Chatbot — Recherche assistée par Mistral
 
-<img src="assets/img/Archi_rag.png" alt="Architecture" width="100%">
+<img src="assets/img/Archi_RAG.png" alt="Architecture" width="150%">
 
 **Objectif.** Accès rapide à la connaissance interne sans logging utilisateur.  
 **Stack.** **Mistral API** + **FAISS** + **Streamlit** (frontend léger).  
