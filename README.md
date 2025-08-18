@@ -1,0 +1,1 @@
+# majinlyut.github.io
