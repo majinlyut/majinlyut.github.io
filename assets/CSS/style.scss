@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Augmenter la largeur max du conteneur principal */
+.wrapper {
+  max-width: 1200px;   /* au lieu de ~700px */
+  padding: 20px;
+}
+
+/* Images = largeur max du conteneur */
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
