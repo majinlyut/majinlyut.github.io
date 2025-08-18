@@ -1,5 +1,4 @@
 theme: jekyll-theme-minimal
 logo: assets/img/photo.jpg
 title: Lyuta NAKATA
-sass:
-  style: compressed
+
