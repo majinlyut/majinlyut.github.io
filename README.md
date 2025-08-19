@@ -1,6 +1,6 @@
 
 # 👋 Salut, je suis Lyuta, Data Engineer
-Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker, Kubernetes), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).
+Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).  
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
 
 ## 🧑‍💻 À propos
@@ -18,7 +18,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ## 🚀 Projets
 
-### Forecast 2.0 — Pipeline météo
+### Energy Weather Data Pipeline
 <p align="center">
   <img src="assets/img/Archi_meteo.png" alt="Architecture Forecast 2.0 (MongoDB RS, Airbyte, PySpark)" width="100%">
 </p>
@@ -27,15 +27,16 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 **Objectif:** Améliorer la fiabilité des prévisions électriques en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
 **Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
 **Rôle / actions:**
-- Architecture multi-sources (normalisation + contrôles qualité)
-- Déploiement MongoDB en Replica Set (EC2/ECS)
-- **Observabilité:** métriques + logs CloudWatch
-- Tests de validation (completeness, duplicates)
+- Architecture multi-sources (normalisation + contrôles qualité)  
+- Déploiement MongoDB en Replica Set (EC2/ECS)  
+- **Observabilité:** métriques + logs CloudWatch  
+- Tests de validation (completeness, duplicates)  
 
 **Impact:**
 - Plus de données météo exploitables  
-- Moins de temps de traitement
-- Disponibilité accrue, scalable et sécurisé.
+- Moins de temps de traitement  
+- Disponibilité accrue, scalable et sécurisé  
+
 ---
 
 ### Sport Data Solution — ETL streaming d'activités sportives
@@ -45,7 +46,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 <sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
 **Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) + Notification Slack pour renforcer l'émulation de l'équipe 
-**Stack:** PostgreSql → Redpanda/Kafka → PySpark → Delta Lake → Power BI
+**Stack:** PostgreSql → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
                                        → Slack API  
 **Rôle / actions:**
 - Ingestion temps réel
@@ -58,7 +59,6 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Latence **< 2 s** sur notifications  
 - Attribution automatique des droits (prime + 5 jours “bien-être”) visualisable sur PowerBI
 
-
 ---
 
 ### RAG Chatbot de recommandation d'évènements
@@ -67,19 +67,20 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 </p>
 <sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
-**Objectif.** Accès rapide à la connaissance interne **sans logging** utilisateur.  
-**Stack.** **Mistral API** + **FAISS** + **Streamlit**.  
+**Objectif.** Faciliter l’accès aux évènements internes et externes via un assistant intelligent, capable de fournir des réponses contextualisées et personnalisées.
+**Stack:** AWS (S3, Lambda, API Gateway, OpenSearch, DynamoDB, Quicksight, CloudWatch) + Mistral API 
 **Rôle / actions.**
-- Ingestion & indexation (chunking, embeddings, métadonnées)
-- Prompting **contextualisé** + gestion d’historique
-- Déploiement conteneurisé + gestion des secrets
+- Ingestion des données OpenAgenda → stockage sur S3
+- Lambda : chunking + embeddings, indexation dans OpenSearch
+- API Gateway → script RAG connecté à Mistral API pour génération de réponses
+- Gestion de l’historique conversationnel + feedback utilisateurs avec DynamoDB
+- Analyse des retours utilisateurs via dashboard Quicksight
+- Monitoring complet de l’architecture avec CloudWatch
 
 **Impact.**
-- Temps de recherche divisé par **3**  
-- Satisfaction interne ↑
-
-
-
+- Temps de recherche amélioré
+- Satisfaction utilisateur ↑ grâce à des réponses contextualisées
+- Scalabilité et résilience grâce à l’architecture cloud-native sur AWS
 
 ## 📬 Contact
 
