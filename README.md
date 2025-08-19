@@ -41,7 +41,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Sport Data Solution — ETL streaming d'activités sportives
 <p align="center">
-  <img src="assets/img/Archi_slack.png" alt="Architecture streaming Slack/Delta Lake" width="100%">
+  <img src="assets/img/Slack1.png" width="100%">
 </p>
 <sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
@@ -58,6 +58,10 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 **Impact:**
 - Latence **< 2 s** sur notifications  
 - Attribution automatique des droits (prime + 5 jours “bien-être”) visualisable sur PowerBI
+
+<p align="center">
+  <img src="assets/img/Archi_slack.png" alt="Architecture streaming Slack/Delta Lake" width="100%">
+</p>
 
 ---
 
