@@ -1,8 +1,4 @@
-<style>
-  .wrapper { max-width: 1200px !important; padding: 24px; }
-  img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 14px rgba(0,0,0,.06); }
-  sub { color: #666; }
-</style>
+
 # 👋 Salut, je suis Lyuta, Data Engineer
 Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker, Kubernetes), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
@@ -28,55 +24,46 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 </p>
 <sub>Architecture : MongoDB Replica Set (ECS) • Airbyte • PySpark • CloudWatch</sub>
 
-**Objectif.** Améliorer la fiabilité des prévisions électriques en zones peu couvertes.  
-**Stack.** Airbyte → MongoDB **Replica Set** (AWS ECS) → **PySpark** → CloudWatch.  
-**Rôle / actions.**
-- Architecture **multi-sources** (normalisation + contrôles qualité)
-- Déploiement MongoDB en **Replica Set** (EC2/ECS)
-- **Observabilité** : métriques + logs CloudWatch
-- Tests de validation (completeness, duplicates, z-score)
+**Objectif:** Améliorer la fiabilité des prévisions électriques en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
+**Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
+**Rôle / actions:**
+- Architecture multi-sources (normalisation + contrôles qualité)
+- Déploiement MongoDB en Replica Set (EC2/ECS)
+- **Observabilité:** métriques + logs CloudWatch
+- Tests de validation (completeness, duplicates)
 
-**Impact.**
-- **+35%** de données météo exploitables  
-- **-50%** de temps de traitement
-
-<details><summary><b>Détails techniques</b></summary>
-
-- Schémas unifiés, idempotence, partitionnement, backfills  
-- Stratégies de ré-essai et alerting
-</details>
-
+**Impact:**
+- Plus de données météo exploitables  
+- Moins de temps de traitement
+- Disponibilité accrue, scalable et sécurisé.
 ---
 
-### Sport Data Solution — ETL streaming bien-être
+### Sport Data Solution — ETL streaming d'activités sportives
 <p align="center">
   <img src="assets/img/Archi_slack.png" alt="Architecture streaming Slack/Delta Lake" width="100%">
 </p>
 <sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
-**Objectif.** Récompenser l’activité sportive (primes & jours “bien-être”).  
-**Stack.** **Redpanda/Kafka** → **PySpark** → **Delta Lake** → **Slack API** / **Power BI**.  
-**Rôle / actions.**
-- Ingestion temps réel (topics par activité)
-- Enrichissement + **règles d’éligibilité** (croisement activités/RH)
-- **Notifications Slack** en live (consumer Python)
-- **Monitoring** : Prometheus + Grafana
+**Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) + Notification Slack pour renforcer l'émulation de l'équipe 
+**Stack:** PostgreSql → Redpanda/Kafka → PySpark → Delta Lake → Power BI
+                                       → Slack API  
+**Rôle / actions:**
+- Ingestion temps réel
+- Delta lake (bronze & gold) 
+- Enrichissement + règles d’éligibilité (croisement activités/RH)
+- Notifications Slack en live (consumer Python) / Dashboard PowerBI pour suivre les indicateurs
+- Monitoring : Prometheus + Grafana (temps de latence, pics, erreurs ...)
 
-**Impact.**
-- Latence **< 5 s** sur notifications  
-- Attribution automatique des droits (prime + 5 jours “bien-être”)
+**Impact:**
+- Latence **< 2 s** sur notifications  
+- Attribution automatique des droits (prime + 5 jours “bien-être”) visualisable sur PowerBI
 
-<details><summary><b>Détails techniques</b></summary>
-
-- Schémas d’événements, exactly-once (checkpointing), SCD sur Delta  
-- Gestion des pics (backpressure) et DLQ
-</details>
 
 ---
 
-### RAG Chatbot — Recherche assistée par Mistral
+### RAG Chatbot de recommandation d'évènements
 <p align="center">
-  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG (Mistral, FAISS, Streamlit)" width="100%">
+  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG " width="100%">
 </p>
 <sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
@@ -91,11 +78,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Temps de recherche divisé par **3**  
 - Satisfaction interne ↑
 
-<details><summary><b>Détails techniques</b></summary>
 
-- Formats supportés, politique de ré-indexation, limites FAISS  
-- Stratégies d’évaluation (exact match / semantic match)
-</details>
 
 
 ## 📬 Contact
