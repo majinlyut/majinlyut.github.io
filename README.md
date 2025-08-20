@@ -88,7 +88,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Monitoring complet de l’architecture avec CloudWatch
 
 <p align="center">
-  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG " width="100%">
+  <img src="assets/img/Archi_RAG.jpg" width="100%">
 </p>
 <sub>Architecture</sub>
 
