@@ -18,33 +18,6 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ## 🚀 Projets
 
-### Energy Weather Data Pipeline
-<p align="center">
-  <img src="assets/img/meteo1.png"  width="100%">
-</p>
-
-
-**Objectif:** Améliorer la fiabilité des prévisions électriques en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
-**Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
-**Rôle / actions:**
-- Architecture multi-sources (normalisation + contrôles qualité)  
-- Déploiement MongoDB en Replica Set (EC2/ECS)  
-- **Observabilité:** métriques + logs CloudWatch  
-- Tests de validation (completeness, duplicates)  
-
-<p align="center">
-  <img src="assets/img/Archi_meteo.png" alt="Architecture" width="100%">
-</p>
-
-**Impact:**
-- Plus de données météo exploitables  
-- Moins de temps de traitement  
-- Disponibilité accrue, scalable et sécurisé  
-
-
-
----
-
 ### Sport Data Solution — ETL streaming d'activités sportives
 <p align="center">
   <img src="assets/img/Slack1.png" width="100%">
@@ -61,15 +34,45 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Notifications Slack en live (consumer Python) / Dashboard PowerBI pour suivre les indicateurs
 - Monitoring : Prometheus + Grafana (temps de latence, pics, erreurs ...)
 
-**Impact:**
-- Latence **< 2 s** sur notifications  
-- Attribution automatique des droits (prime + 5 jours “bien-être”) visualisable sur PowerBI
-
 <p align="center">
   <img src="assets/img/Archi_slack.png" alt="Architecture streaming Slack/Delta Lake" width="100%">
 </p>
 
+**Impact:**
+- Latence **< 2 s** sur notifications  
+- Calcul automatique des primes visualisable sur PowerBI
+- Possibilité de changement des rêgles d'attribution pour recalcul
+
 ---
+
+### Energy Weather Data Pipeline
+<p align="center">
+  <img src="assets/img/meteo1.png"  width="100%">
+</p>
+
+
+**Objectif:** Améliorer la fiabilité des prévisions électriques vertes en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
+**Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
+**Rôle / actions:**
+- Architecture multi-sources (normalisation + contrôles qualité)  
+- Déploiement MongoDB en Replica Set (EC2/ECS)  
+- Monitoring: métriques + logs CloudWatch  
+- Tests de validation (completeness, duplicates)  
+
+<p align="center">
+  <img src="assets/img/Archi_meteo.png" alt="Architecture" width="100%">
+</p>
+
+**Impact:**
+- Plus de données météo exploitables  
+- Moins de temps de traitement  
+- Disponibilité accrue, scalable et sécurisé  
+
+
+
+---
+
+
 
 ### RAG Chatbot de recommandation d'évènements
 <p align="center">
