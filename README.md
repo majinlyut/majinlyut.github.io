@@ -85,7 +85,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 <p align="center">
   <img src="assets/img/rag.jpg" alt="Architecture RAG " width="100%">
 </p>
-<sub>Architecture : Mistral API • FAISS • Streamlit</sub>
+
 
 **Objectif.** Faciliter l’accès aux évènements internes et externes via un assistant intelligent, capable de fournir des réponses contextualisées et personnalisées.  
 **Stack:** AWS (S3, Lambda, API Gateway, OpenSearch, DynamoDB, Quicksight, CloudWatch) + Mistral API  
@@ -100,7 +100,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 <p align="center">
   <img src="assets/img/Archi_RAG.png" width="100%">
 </p>
-<sub>Architecture</sub>
+
 
 **Impact.**
 - Temps de recherche amélioré
