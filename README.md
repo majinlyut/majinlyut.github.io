@@ -43,7 +43,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Calcul automatique des primes visualisable sur PowerBI
 - Possibilité de changement des rêgles d'attribution pour recalcul
 
----
+* * *
 
 ### Energy Weather Data Pipeline
 <p align="center">
@@ -70,7 +70,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 
 
----
+* * *
 
 
 
