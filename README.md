@@ -80,8 +80,8 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 </p>
 <sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
-**Objectif.** Faciliter l’accès aux évènements internes et externes via un assistant intelligent, capable de fournir des réponses contextualisées et personnalisées.
-**Stack:** AWS (S3, Lambda, API Gateway, OpenSearch, DynamoDB, Quicksight, CloudWatch) + Mistral API 
+**Objectif.** Faciliter l’accès aux évènements internes et externes via un assistant intelligent, capable de fournir des réponses contextualisées et personnalisées.  
+**Stack:** AWS (S3, Lambda, API Gateway, OpenSearch, DynamoDB, Quicksight, CloudWatch) + Mistral API  
 **Rôle / actions.**
 - Ingestion des données OpenAgenda → stockage sur S3
 - Lambda : chunking + embeddings, indexation dans OpenSearch
