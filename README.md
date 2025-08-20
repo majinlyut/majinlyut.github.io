@@ -20,9 +20,9 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### Energy Weather Data Pipeline
 <p align="center">
-  <img src="assets/img/Archi_meteo.png" alt="Architecture Forecast 2.0 (MongoDB RS, Airbyte, PySpark)" width="100%">
+  <img src="assets/img/meteo1.png"  width="100%">
 </p>
-<sub>Architecture : MongoDB Replica Set (ECS) • Airbyte • PySpark • CloudWatch</sub>
+
 
 **Objectif:** Améliorer la fiabilité des prévisions électriques en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
 **Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
@@ -32,10 +32,16 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - **Observabilité:** métriques + logs CloudWatch  
 - Tests de validation (completeness, duplicates)  
 
+<p align="center">
+  <img src="assets/img/Archi_meteo.png" alt="Architecture" width="100%">
+</p>
+
 **Impact:**
 - Plus de données météo exploitables  
 - Moins de temps de traitement  
 - Disponibilité accrue, scalable et sécurisé  
+
+
 
 ---
 
@@ -67,7 +73,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### RAG Chatbot de recommandation d'évènements
 <p align="center">
-  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG " width="100%">
+  <img src="assets/img/rag.png" alt="Architecture RAG " width="100%">
 </p>
 <sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
@@ -80,6 +86,11 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Gestion de l’historique conversationnel + feedback utilisateurs avec DynamoDB
 - Analyse des retours utilisateurs via dashboard Quicksight
 - Monitoring complet de l’architecture avec CloudWatch
+
+<p align="center">
+  <img src="assets/img/Archi_RAG.png" alt="Architecture RAG " width="100%">
+</p>
+<sub>Architecture</sub>
 
 **Impact.**
 - Temps de recherche amélioré
