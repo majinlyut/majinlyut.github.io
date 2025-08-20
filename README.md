@@ -76,7 +76,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ### RAG Chatbot de recommandation d'évènements
 <p align="center">
-  <img src="assets/img/rag.png" alt="Architecture RAG " width="100%">
+  <img src="assets/img/rag.jpg" alt="Architecture RAG " width="100%">
 </p>
 <sub>Architecture : Mistral API • FAISS • Streamlit</sub>
 
@@ -91,7 +91,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Monitoring complet de l’architecture avec CloudWatch
 
 <p align="center">
-  <img src="assets/img/Archi_RAG.jpg" width="100%">
+  <img src="assets/img/Archi_RAG.png" width="100%">
 </p>
 <sub>Architecture</sub>
 
