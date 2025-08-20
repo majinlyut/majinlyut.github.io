@@ -1,5 +1,6 @@
 
-# 👋 Salut, je suis Lyuta, Data Engineer
+# 👋 Salut!  
+# Je suis Lyuta, Data Engineer
 Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).  
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
 
@@ -99,6 +100,8 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Temps de recherche amélioré
 - Satisfaction utilisateur ↑ grâce à des réponses contextualisées
 - Scalabilité et résilience grâce à l’architecture cloud-native sur AWS
+
+* * *
 
 ## 📬 Contact
 
