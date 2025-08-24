@@ -44,7 +44,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Calcul automatique des primes visualisable sur PowerBI
 - Possibilité de changement des rêgles d'attribution pour recalcul
 
-
+[Lien vers le projet](https://github.com/majinlyut/sport_data_solution)))
 
 * * *
 * * *
@@ -74,7 +74,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Moins de temps de traitement  
 - Disponibilité accrue, scalable et sécurisé  
 
-
+[Lien vers le projet](https://github.com/majinlyut/weather_data_pipeline))
 
 * * *
 * * *
@@ -106,6 +106,8 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 - Temps de recherche amélioré
 - Satisfaction utilisateur ↑ grâce à des réponses contextualisées
 - Scalabilité et résilience grâce à l’architecture cloud-native sur AWS
+
+[Lien vers le projet](https://github.com/majinlyut/weather_data_pipeline))
 
 * * *
 * * *
