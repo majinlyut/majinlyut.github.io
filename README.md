@@ -12,9 +12,12 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ## 🛠️ Compétences
 - **Langages** : Python, SQL, PySpark  
-- **Data** : Kafka/Redpanda, Delta Lake, MongoDB, PostgreSQL  
-- **Cloud/Infra** : AWS (ECS, S3, CloudWatch), Docker, Kestra  
-- **Visualisation** : Power BI, Grafana  
+- **Data Engineering** : ETL/ELT, Kafka/Redpanda (streaming), Spark, Delta Lake, MongoDB, PostgreSQL  
+- **Orchestration** : Kestra, Airflow  
+- **Cloud & Infra** : AWS (ECS, S3, CloudWatch), Docker  
+- **Visualisation** : Power BI (reporting métier), Grafana (monitoring technique)  
+- **MLops (notions)** : Feature engineering, entraînement/évaluation, industrialisation (BentoML)  
+
 
 
 ## 🚀 Projets
