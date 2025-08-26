@@ -1,12 +1,12 @@
 
 # 👋 Salut!  
 # Je suis Lyuta, Data Engineer
-Après 2 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).  
+Après 4 ans en contrôle de gestion, j’ai évolué vers le data engineering pour automatiser et fiabiliser des flux de données à grande échelle. Je conçois et déploie des pipelines Big Data (Python, SQL, Spark, Kafka/Redpanda, Delta Lake) et des architectures Cloud (AWS, Docker), avec une expertise en ETL/ELT, orchestration (Kestra, Airflow) et data visualization (Power BI, Grafana).  
 Mon atout ? Une double compétence : compréhension métier acquise en finance et maîtrise des outils techniques pour transformer la donnée en décisions.
 
 ## 🧑‍💻 À propos
 - 🎓 Master Contrôle de gestion + Master Data Engineering  
-- 💼 2 ans en contrôle de gestion → transition vers la data  
+- 💼 4 ans en contrôle de gestion → transition vers la data  
 - 🚀 Spécialiste ETL/ELT, streaming temps réel, monitoring et pipelines cloud  
 
 
@@ -28,14 +28,14 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 </p>
 <sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
-**Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) + Notification Slack pour renforcer l'émulation de l'équipe 
+**Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) sous forme de prime + envoyer des Notification Slack pour renforcer l'émulation de l'équipe 
 **Stack:** PostgreSql → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
                                        → Slack API  
 **Rôle / actions:**
-- Ingestion temps réel
-- Delta lake (bronze & gold) 
-- Enrichissement + règles d’éligibilité (croisement activités/RH)
-- Notifications Slack en live (consumer Python) / Dashboard PowerBI pour suivre les indicateurs
+- Ingestion temps réel des données Strava
+- Delta lake bronze (données brutes) & gold (données transformées)
+- Enrichissement via données RH + calcul des primes via des rêgles d'éligibilités (consumer spark streaming)
+- Notifications Slack en live (consumer Python) / Dashboard PowerBI pour suivre les indicateurs (taux éligibilité, coût des primes ...)
 - Monitoring : Prometheus + Grafana (temps de latence, pics, erreurs ...)
 
 <p align="center">
@@ -61,7 +61,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 
 **Objectif:** Améliorer la fiabilité des prévisions électriques vertes en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
-**Stack:** Airbyte → MongoDB Replica Set (AWS ECS) → PySpark → CloudWatch.  
+**Stack:** Airbyte → MongoDB Replica Set (AWS ECS)  → CloudWatch.  
 **Rôle / actions:**
 - Architecture multi-sources (normalisation + contrôles qualité)  
 - Déploiement MongoDB en Replica Set (EC2/ECS)  
