@@ -26,7 +26,6 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 <p align="center">
   <img src="assets/img/Slack1.png" width="100%">
 </p>
-<sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
 **Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) sous forme de prime + envoyer des Notification Slack pour renforcer l'émulation de l'équipe 
 **Stack:** PostgreSql → Debezium → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
