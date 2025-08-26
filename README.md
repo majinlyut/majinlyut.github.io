@@ -11,10 +11,10 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 
 ## 🛠️ Compétences
-- **Langages** : Python, SQL, PySpark  
+- **Langages** : Python, SQL 
 - **Data Engineering** : ETL/ELT, Kafka/Redpanda (streaming), Spark, Delta Lake, MongoDB, PostgreSQL  
 - **Orchestration** : Kestra, Airflow  
-- **Cloud & Infra** : AWS (ECS, S3, CloudWatch), Docker  
+- **Cloud & Infra** : AWS, Docker
 - **Visualisation** : Power BI (reporting métier), Grafana (monitoring technique)  
 - **MLops (notions)** : Feature engineering, entraînement/évaluation, industrialisation (BentoML)  
 
@@ -29,13 +29,14 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 <sub>Architecture : Redpanda/Kafka • PySpark Structured Streaming • Delta Lake • Slack API • Power BI</sub>
 
 **Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) sous forme de prime + envoyer des Notification Slack pour renforcer l'émulation de l'équipe 
-**Stack:** PostgreSql → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
-                                       → Slack API  
+**Stack:** PostgreSql → Debezium → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
+                                                  → Slack API  
 **Rôle / actions:**
 - Ingestion temps réel des données Strava
 - Delta lake bronze (données brutes) & gold (données transformées)
 - Enrichissement via données RH + calcul des primes via des rêgles d'éligibilités (consumer spark streaming)
-- Notifications Slack en live (consumer Python) / Dashboard PowerBI pour suivre les indicateurs (taux éligibilité, coût des primes ...)
+- Notifications en live via l'API Slack  (consumer Python)
+- Dashboard PowerBI pour suivre les indicateurs (taux éligibilité, coût des primes ...)
 - Monitoring : Prometheus + Grafana (temps de latence, pics, erreurs ...)
 
 <p align="center">
@@ -44,7 +45,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 **Impact:**
 - Latence **< 2 s** sur notifications  
-- Calcul automatique des primes visualisable sur PowerBI
+- Calcul automatique des primes et indicateurs visualisable sur PowerBI
 - Possibilité de changement des rêgles d'attribution pour recalcul
 
 [Lien vers le projet](https://github.com/majinlyut/sport_data_solution)
