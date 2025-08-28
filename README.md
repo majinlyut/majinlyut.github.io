@@ -11,13 +11,15 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 
 ## 🛠️ Compétences
-- **Langages** : Python, SQL 
-- **Data Engineering** : ETL/ELT, Kafka/Redpanda (streaming), Spark, Delta Lake, MongoDB, PostgreSQL  
-- **Orchestration** : Kestra, Airflow  
-- **Cloud & Infra** : AWS, Docker
-- **Visualisation** : Power BI (reporting métier), Grafana (monitoring technique)  
-- **MLops (notions)** : Feature engineering, entraînement/évaluation, industrialisation (BentoML)  
-
+- **Langages :** Python, SQL  
+- **Big Data :** Kafka/Redpanda, Delta Lake, MongoDB, PostgreSQL  
+- **Cloud & Conteneurs :** AWS (ECS, S3, Lambda, CloudWatch), GCP (BigQuery), Docker, Kubernetes  
+- **Orchestration & ETL :** Kestra, Airflow, Airbyte  
+- **CI/CD & Monitoring :** GitHub Actions, Prometheus, Grafana  
+- **DataViz :** Power BI  
+- **MLOps (notions) :** Feature engineering, entraînement/évaluation, industrialisation (BentoML)  
+- **Langues :** Français (natif), Anglais (courant – B2/C1), Japonais (notions)  
+- **Points forts :** Vulgarisation auprès des métiers, vision orientée ROI (héritée du contrôle de gestion)  
 
 
 ## 🚀 Projets
@@ -27,10 +29,10 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
   <img src="assets/img/Slack1.png" width="100%">
 </p>
 
-**Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) sous forme de prime + envoyer des Notification Slack pour renforcer l'émulation de l'équipe 
+**Objectif:** Récompenser l’activité sportive (trajet domicile/travail et extra-professionnel) sous forme de prime + envoyer des Notification Slack pour renforcer l'émulation de l'équipe  
 **Stack:** PostgreSql → Debezium → Redpanda/Kafka → PySpark → Delta Lake → Power BI  
                                                   → Slack API  
-**Rôle / actions:**
+**Implémentations:**  
 - Ingestion temps réel des données Strava
 - Delta lake bronze (données brutes) & gold (données transformées)
 - Enrichissement via données RH + calcul des primes via des rêgles d'éligibilités (consumer spark streaming)
@@ -62,7 +64,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 **Objectif:** Améliorer la fiabilité des prévisions électriques vertes en zones peu couvertes en ajoutant des sources météo semi-amateurs.  
 **Stack:** Airbyte → MongoDB Replica Set (AWS ECS)  → CloudWatch.  
-**Rôle / actions:**
+**Implémentations:**  
 - Architecture multi-sources (normalisation + contrôles qualité)  
 - Déploiement MongoDB en Replica Set (EC2/ECS)  
 - Monitoring: métriques + logs CloudWatch  
@@ -92,7 +94,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 **Objectif.** Faciliter l’accès aux évènements internes et externes via un assistant intelligent, capable de fournir des réponses contextualisées et personnalisées.  
 **Stack:** AWS (S3, Lambda, API Gateway, OpenSearch, DynamoDB, Quicksight, CloudWatch) + Mistral API  
-**Rôle / actions.**
+**Implémentations:**  
 - Ingestion des données OpenAgenda → stockage sur S3
 - Lambda : chunking + embeddings, indexation dans OpenSearch
 - API Gateway → script RAG connecté à Mistral API pour génération de réponses
