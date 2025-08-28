@@ -107,7 +107,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 </p>
 
 
-**Impact.**
+**Impact:**
 - Temps de recherche amélioré
 - Satisfaction utilisateur ↑ grâce à des réponses contextualisées
 - Scalabilité et résilience grâce à l’architecture cloud-native sur AWS
