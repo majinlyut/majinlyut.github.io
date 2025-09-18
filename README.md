@@ -12,9 +12,9 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ## 🛠️ Compétences
 - **Langages :** Python, SQL  
-- **Big Data :** Kafka/Redpanda, Delta Lake, MongoDB, PostgreSQL  
+- **Big Data :** Kafka/Redpanda, Delta Lake, MongoDB, PostgreSQL, Snowflake 
 - **Cloud & Conteneurs :** AWS (ECS, S3, Lambda, CloudWatch), GCP (BigQuery), Docker, Kubernetes  
-- **Orchestration & ETL :** Kestra, Airflow, Airbyte  
+- **Orchestration & ETL :** DBT, Kestra, Airflow, Airbyte  
 - **CI/CD & Monitoring :** GitHub Actions, Prometheus, Grafana  
 - **DataViz :** Power BI  
 - **MLOps (notions) :** Feature engineering, entraînement/évaluation, industrialisation (BentoML)  
@@ -119,7 +119,7 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 
 ## 📬 Contact
 
-- Email : [lyuta.nakata@gmail.com.com](mailto:lyuta.nakata@gmail.com)  
+- Email : [lyuta.nakata@gmail.com](mailto:lyuta.nakata@gmail.com)  
 - LinkedIn : [https://linkedin.com/in/lyuta ](https://www.linkedin.com/in/lyuta-nakata/) 
 - GitHub : [https://github.com/majinlyut](https://github.com/majinlyut)
 
