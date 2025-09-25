@@ -117,11 +117,12 @@ Mon atout ? Une double compétence : compréhension métier acquise en finance e
 * * *
 * * *
 
-## 📬 Contact
+## 📬 Contact & liens
 
+- Mon CV : [📄 Télécharger mon CV](assets/CV_NAKATA_Lyuta_Data_Engineer.pdf)
 - Email : [lyuta.nakata@gmail.com](mailto:lyuta.nakata@gmail.com)  
 - LinkedIn : [https://linkedin.com/in/lyuta ](https://www.linkedin.com/in/lyuta-nakata/) 
 - GitHub : [https://github.com/majinlyut](https://github.com/majinlyut)
 
-_Dernière mise à jour : 2025‑08‑18_
+_Dernière mise à jour : 2025‑09‑25_
 
